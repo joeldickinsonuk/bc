@@ -392,13 +392,13 @@ p {
   box-shadow: var(--shadow);
   border: 1px solid rgba(216, 166, 90, 0.42);
   overflow: hidden;
-  transform: rotate(1.4deg);
+  transform: none;
   transition: transform 0.24s ease;
   animation: heroFloat 7s ease-in-out infinite;
 }
 
 .hero-card:hover {
-  transform: rotate(0deg) translateY(-3px);
+  transform: translateY(-3px);
 }
 
 .hero-card img {
@@ -431,6 +431,15 @@ p {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border: 1px solid rgba(138, 89, 43, 0.2);
+}
+
+.section-title h2 {
+  margin-top: 0.6rem;
+  color: #f5e7d4;
+}
+
+.section-title p {
+  margin: 0;
 }
 
 .hero-meta {
@@ -632,6 +641,46 @@ p {
 .banner p {
   margin-top: 0.8rem;
   color: #ecd0a8;
+}
+
+.banner-light {
+  background: linear-gradient(180deg, var(--paper), var(--paper-soft));
+  color: var(--ink);
+  border: 1px solid rgba(138, 89, 43, 0.28);
+}
+
+.banner-light h2 {
+  color: #3a251b;
+}
+
+.banner-light p {
+  color: #5e4c3f;
+}
+
+.banner-light .card {
+  color: var(--ink);
+}
+
+.banner-light .card {
+  background: linear-gradient(180deg, #fbf1e5, #eedbc3);
+}
+
+.banner-light .card p,
+.banner-light .card .lead,
+.banner-light .card li {
+  color: #5e4c3f !important;
+}
+
+.banner-light .card h3 {
+  color: #3a251b !important;
+}
+
+.homepage-gallery img {
+  aspect-ratio: 4 / 3 !important;
+}
+
+.homepage-gallery-secondary img {
+  aspect-ratio: 4 / 3 !important;
 }
 
 .home-contact a {
@@ -980,10 +1029,10 @@ p {
 @keyframes heroFloat {
   0%,
   100% {
-    transform: rotate(1.4deg) translateY(0);
+    transform: translateY(0);
   }
   50% {
-    transform: rotate(1.2deg) translateY(-6px);
+    transform: translateY(-6px);
   }
 }
 
