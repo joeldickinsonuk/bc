@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="School entertainment illustration">
+  <defs>
+    <linearGradient id="s1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6b61e"/>
+      <stop offset="100%" stop-color="#ff7e3f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#s1)"/>
+  <path d="M180 760h840l-90-330H270z" fill="#1f1b18" opacity="0.86"/>
+  <path d="M220 440h760" stroke="#fff8eb" stroke-width="18"/>
+  <circle cx="310" cy="250" r="45" fill="#fff8eb"/>
+  <circle cx="890" cy="220" r="36" fill="#fff8eb"/>
+  <circle cx="960" cy="320" r="24" fill="#fff8eb"/>
+  <path d="M540 300l20 40 40 6-30 28 8 40-38-20-38 20 8-40-30-28 40-6z" fill="#fff8eb"/>
+</svg>

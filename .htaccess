@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Legacy service URLs to new slug paths
+Redirect 301 /services/circus-workshops.html /circus-workshops-for-schools/
+Redirect 301 /services/circus-days.html /circus-workshops/
+Redirect 301 /services/brownies-workshops.html /circus-skills-scouts-brownies-guides-cubs/
+Redirect 301 /services/hospitality.html /corporate-hospitality-entertainment/
+Redirect 301 /services/kids-parties.html /birth-party-entertainment/
+Redirect 301 /services/magic-workshops.html /magic-workshops-for-schools-with-blooming-circus/
+Redirect 301 /contact.html /contact/

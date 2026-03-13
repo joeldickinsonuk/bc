@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book a School Workshop | Contact Blooming Circus</title>
+    <meta
+      name="description"
+      content="Contact Blooming Circus to book circus workshops, magic workshops, or school entertainment shows."
+    />
+    <link rel="canonical" href="https://bloomingcircus.com/contact/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css?v=25" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="/">Blooming<br /><span>Circus</span></a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <nav class="main-nav" data-nav>
+          <ul>
+            <li class="has-submenu"><a href="/circus-workshops/">Circus Workshops</a><ul class="submenu"><li><a href="/circus-workshops-for-schools/">Circus Workshops for Schools</a></li><li><a href="/circus-skills-scouts-brownies-guides-cubs/">Brownies Circus Workshops</a></li></ul></li>
+            <li><a href="/magic-workshops-for-schools-with-blooming-circus/">Magic Workshops</a></li>
+            <li><a href="/services/school-shows.html">School Shows</a></li><li><a href="/birth-party-entertainment/">Kids Parties</a></li>
+            <li><a href="/corporate-hospitality-entertainment/">Hospitality</a></li>
+            <li><a href="/services/weddings.html">Weddings</a></li>
+            <li><a href="/areas.html">Areas</a></li>
+            <li><a href="/reviews.html">Reviews</a></li>
+            <li><a class="btn btn-primary active" href="/contact/">Book a Date</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="kicker">Booking Enquiry</p>
+          <h1>Book Blooming Circus</h1>
+          <p>
+            Share your preferred date, school type, and workshop choice. We respond quickly with availability and a clear quote.
+          </p>
+        </div>
+      </section>
+
+      <section class="section surface">
+        <div class="container grid-2">
+          <form class="form reveal" action="mailto:info@bloomingcircus.com" method="post" enctype="text/plain">
+            <h2>Enquiry Form</h2>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="school">School / Organisation</label>
+            <input id="school" name="school" type="text" required />
+
+            <label for="service">Service Needed</label>
+            <select id="service" name="service" required>
+              <option value="">Select one</option>
+              <option>Circus Workshops</option>
+              <option>Magic Workshops</option>
+              <option>School Entertainment Show</option>
+              <option>Workshop + Show Package</option>
+            </select>
+
+            <label for="message">Event details</label>
+            <textarea id="message" name="message" placeholder="Preferred date, year groups, audience size, location"></textarea>
+
+            <div class="hero-actions">
+              <button class="btn btn-primary" type="submit">Send Enquiry</button>
+            </div>
+          </form>
+
+          <article class="card reveal">
+            <h2>Direct contact</h2>
+            <p class="lead">Phone: <a href="tel:+447715847691">07715 847691</a></p>
+            <p class="lead">Email: <a href="mailto:info@bloomingcircus.com">info@bloomingcircus.com</a></p>
+            <h3 style="margin-top: 1rem;">Booking checklist</h3>
+            <ul class="list">
+              <li>Preferred date and backup date</li>
+              <li>Year groups and pupil numbers</li>
+              <li>Hall/stage space details</li>
+              <li>Any accessibility or SEND considerations</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-wrap">
+        <span>© 2026 Blooming Circus</span>
+        <span>07715 847691</span>
+        <span><a href="mailto:info@bloomingcircus.com">info@bloomingcircus.com</a></span>
+      </div>
+    </footer>
+
+    <script src="/script.js" defer></script>
+  </body>
+</html>
