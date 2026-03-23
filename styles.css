@@ -179,17 +179,61 @@ figure {
 .brand {
   text-decoration: none;
   display: inline-flex;
-  flex-direction: column;
-  line-height: 0.86;
-  white-space: nowrap;
-  font-family: "Playfair Display", serif;
-  font-size: clamp(1.18rem, 2vw, 1.6rem);
-  font-weight: 800;
-  color: var(--green);
-  letter-spacing: -0.03em;
+  align-items: center;
+  gap: 0.62rem;
+  min-height: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
 }
 
-.brand span {
+.brand-mark {
+  width: 44px;
+  flex: 0 0 44px;
+  display: grid;
+  place-items: center start;
+  overflow: visible;
+}
+
+.brand-mark img {
+  width: 44px;
+  height: auto;
+  max-width: 44px;
+  max-height: 58px;
+  object-fit: contain;
+  object-position: center center;
+  transform: none;
+  filter: drop-shadow(0 6px 12px rgba(26, 26, 26, 0.08));
+}
+
+.brand-wordmark {
+  display: grid;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.brand-title {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.22rem, 2vw, 1.66rem);
+  line-height: 0.95;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--charcoal);
+}
+
+.brand-title em {
+  font-style: normal;
+  color: var(--green);
+}
+
+.brand-kicker {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--blue);
 }
 
@@ -1098,6 +1142,10 @@ p {
     min-height: 50px;
     padding-inline: 0.8rem;
   }
+
+  .brand-kicker {
+    letter-spacing: 0.1em;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1206,6 +1254,29 @@ p {
     border-radius: 20px;
   }
 
+  .brand {
+    gap: 0.52rem;
+  }
+
+  .brand-mark {
+    width: 38px;
+    flex-basis: 38px;
+  }
+
+  .brand-mark img {
+    width: 38px;
+    max-width: 38px;
+    max-height: 50px;
+  }
+
+  .brand-title {
+    font-size: 1.18rem;
+  }
+
+  .brand-kicker {
+    font-size: 0.64rem;
+  }
+
   h1 {
     font-size: clamp(2.05rem, 10vw, 3.2rem);
   }
@@ -1243,6 +1314,14 @@ p {
 
   .main-nav {
     inset: 82px 0.6rem auto 0.6rem;
+  }
+
+  .brand {
+    padding-right: 0.52rem;
+  }
+
+  .brand-kicker {
+    display: none;
   }
 
   .photo-gallery-4,
