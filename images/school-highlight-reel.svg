@@ -1,0 +1,46 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="screen">
+      <rect x="40" y="40" width="1520" height="820" rx="44" />
+    </clipPath>
+    <linearGradient id="overlay" x1="800" y1="40" x2="800" y2="860" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="rgba(0,0,0,0.05)" />
+      <stop offset="0.75" stop-color="rgba(0,0,0,0.0)" />
+      <stop offset="1" stop-color="rgba(0,0,0,0.55)" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" rx="50" fill="#FFFFFF" />
+  <rect x="12" y="12" width="1576" height="876" rx="46" fill="#FFF8E7" stroke="#E5E7EB" stroke-width="2" />
+
+  <g clip-path="url(#screen)">
+    <image href="/images/circus-for-schools/jay-school-assembly.jpg" x="40" y="40" width="1520" height="820" preserveAspectRatio="xMidYMid slice">
+      <animate attributeName="opacity" values="1;1;0;0;0" keyTimes="0;0.18;0.25;1;1" dur="24s" repeatCount="indefinite" />
+    </image>
+    <image href="/images/circus-for-schools/juggling-for-school.jpg" x="40" y="40" width="1520" height="820" preserveAspectRatio="xMidYMid slice" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2;0.28;0.46;0.53;1" dur="24s" repeatCount="indefinite" />
+    </image>
+    <image href="/images/circus-for-schools/plate-spinning-school-girl.jpg" x="40" y="40" width="1520" height="820" preserveAspectRatio="xMidYMid slice" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.48;0.56;0.72;0.79;1" dur="24s" repeatCount="indefinite" />
+    </image>
+    <image href="/images/circus-for-schools/feather-balancing-school.jpg" x="40" y="40" width="1520" height="820" preserveAspectRatio="xMidYMid slice" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.76;0.84;0.96;1" dur="24s" repeatCount="indefinite" />
+    </image>
+    <rect x="40" y="40" width="1520" height="820" rx="44" fill="url(#overlay)" />
+  </g>
+
+  <rect x="88" y="88" width="188" height="44" rx="22" fill="rgba(255,255,255,0.92)" />
+  <circle cx="118" cy="110" r="9" fill="#E63946">
+    <animate attributeName="opacity" values="1;0.45;1" dur="1.8s" repeatCount="indefinite" />
+  </circle>
+  <text x="142" y="117" fill="#1A1A1A" font-size="20" font-family="Arial, sans-serif" font-weight="700">School Highlights</text>
+
+  <rect x="80" y="724" width="1440" height="104" rx="28" fill="rgba(255,255,255,0.94)" />
+  <text x="118" y="772" fill="#1A1A1A" font-size="40" font-family="Georgia, serif" font-weight="700">Show. Workshops. Student performance.</text>
+  <text x="118" y="807" fill="#4F5560" font-size="24" font-family="Arial, sans-serif">A concise look at how a Blooming Circus school day feels from start to finish.</text>
+
+  <circle cx="1338" cy="777" r="8" fill="#16A34A" />
+  <circle cx="1370" cy="777" r="8" fill="#2FA4FF" />
+  <circle cx="1402" cy="777" r="8" fill="#FFD60A" />
+  <circle cx="1434" cy="777" r="8" fill="#E63946" />
+</svg>

@@ -8,71 +8,36 @@
   <url>
     <loc>https://bloomingcircus.com/circus-workshops-for-schools/</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://bloomingcircus.com/circus-skills-scouts-brownies-guides-cubs/</loc>
+    <loc>https://bloomingcircus.com/event-entertainment/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bloomingcircus.com/magic-workshops-for-schools-with-blooming-circus/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://bloomingcircus.com/services/school-shows.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://bloomingcircus.com/services/performers.html</loc>
+    <loc>https://bloomingcircus.com/workshops-for-scouts-youth-groups/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bloomingcircus.com/services/walkabout-entertainers.html</loc>
+    <loc>https://bloomingcircus.com/weddings-private-events/</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://bloomingcircus.com/circus-workshops/</loc>
+    <loc>https://bloomingcircus.com/kids-parties/</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://bloomingcircus.com/areas.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bloomingcircus.com/reviews.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bloomingcircus.com/about.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://bloomingcircus.com/reviews/</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bloomingcircus.com/contact/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://bloomingcircus.com/birth-party-entertainment/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bloomingcircus.com/corporate-hospitality-entertainment/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bloomingcircus.com/services/weddings.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset>
