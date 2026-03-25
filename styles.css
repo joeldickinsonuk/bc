@@ -552,8 +552,17 @@ p {
 }
 
 .hero-image-band img {
-  aspect-ratio: 21 / 8;
+  aspect-ratio: auto;
   width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: contain;
+  object-position: center center;
+  filter: saturate(1.04) contrast(1.01);
+}
+
+.hero-image-band {
+  padding: 0.75rem;
 }
 
 .testimonials-grid {
@@ -719,7 +728,6 @@ p {
 
 .card,
 .video-card,
-.download-card,
 .review-highlight,
 .trust-feature {
   background: #fff;
@@ -742,14 +750,12 @@ p {
 .card h2,
 .card h3,
 .video-card h2,
-.download-card h2,
 .review-highlight h2 {
   color: var(--charcoal);
 }
 
 .card p,
 .card li,
-.download-card p,
 .video-card p,
 .banner p,
 .review-card p {
@@ -783,6 +789,10 @@ p {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.photo-gallery-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .photo-gallery-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
@@ -793,6 +803,10 @@ p {
 
 .photo-gallery img {
   border-radius: var(--media-radius-sm);
+}
+
+.school-photo-wall img {
+  min-height: 150px;
 }
 
 .wedding-gallery {
@@ -1069,15 +1083,13 @@ p {
   font-size: 0.88rem;
 }
 
-.download-card ul,
-.brochure-list {
+.card ul {
   margin: 1rem 0 0;
   padding-left: 1.1rem;
   color: var(--muted);
 }
 
-.download-card li + li,
-.brochure-list li + li {
+.card ul li + li {
   margin-top: 0.45rem;
 }
 
@@ -1395,7 +1407,6 @@ p {
 
   .card,
   .video-card,
-  .download-card,
   .review-highlight,
   .banner {
     padding: 20px;
@@ -1413,6 +1424,7 @@ p {
     display: none;
   }
 
+  .photo-gallery-2,
   .photo-gallery-4,
   .photo-gallery-5,
   .photo-gallery-6 {
