@@ -805,6 +805,21 @@ p {
   border-radius: var(--media-radius-sm);
 }
 
+.school-gallery-card {
+  padding: 18px;
+}
+
+.school-detail-gallery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-content: start;
+}
+
+.school-detail-gallery img {
+  aspect-ratio: 4 / 3;
+  min-height: 180px;
+}
+
 .school-photo-wall img {
   min-height: 150px;
 }
@@ -1337,6 +1352,10 @@ p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .school-detail-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .trust-bar {
     margin-top: 0;
   }
@@ -1428,6 +1447,10 @@ p {
   .photo-gallery-4,
   .photo-gallery-5,
   .photo-gallery-6 {
+    grid-template-columns: 1fr;
+  }
+
+  .school-detail-gallery {
     grid-template-columns: 1fr;
   }
 
