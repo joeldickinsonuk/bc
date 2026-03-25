@@ -498,6 +498,77 @@ p {
     0 18px 40px rgba(26, 26, 26, 0.07);
 }
 
+.home-featured-reviews {
+  padding: 1.25rem 0 0.75rem;
+}
+
+.compact-title {
+  max-width: 640px;
+}
+
+.featured-review-row,
+.testimonials-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.featured-review-row {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.featured-review-card {
+  text-align: left;
+  justify-content: space-between;
+}
+
+.featured-review-card p:nth-child(2) {
+  color: var(--charcoal);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.featured-review-star {
+  color: #d9a200;
+  font-size: 0.95rem;
+  letter-spacing: 0.2em;
+}
+
+.featured-review-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.intro-copy {
+  max-width: 860px;
+}
+
+.intro-copy p + p {
+  margin-top: 0.9rem;
+}
+
+.image-band-section {
+  padding-top: 0;
+}
+
+.hero-image-band img {
+  aspect-ratio: 21 / 8;
+  width: 100%;
+}
+
+.testimonials-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.quote-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-card .quote {
+  flex: 1;
+}
+
 .home-hero::before,
 .home-hero::after {
   content: "";
@@ -722,6 +793,17 @@ p {
 
 .photo-gallery img {
   border-radius: var(--media-radius-sm);
+}
+
+.wedding-gallery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-content: start;
+}
+
+.wedding-gallery img {
+  aspect-ratio: 4 / 3;
+  min-height: 170px;
 }
 
 .page-hero {
@@ -1143,6 +1225,11 @@ p {
     padding-inline: 0.8rem;
   }
 
+  .featured-review-row,
+  .testimonials-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .brand-kicker {
     letter-spacing: 0.1em;
   }
@@ -1224,6 +1311,8 @@ p {
   .grid-2,
   .split,
   .feature-grid,
+  .featured-review-row,
+  .testimonials-grid,
   .video-shell,
   .school-hero,
   .home-hero-grid {
