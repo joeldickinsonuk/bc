@@ -806,18 +806,64 @@ p {
 }
 
 .school-gallery-card {
-  padding: 18px;
+  padding: 16px;
 }
 
 .school-detail-gallery {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  align-content: start;
+  display: grid;
+  gap: 0.8rem;
 }
 
-.school-detail-gallery img {
+.school-detail-gallery-main {
+  border-radius: 18px;
+}
+
+.school-detail-gallery-main img {
+  aspect-ratio: 16 / 10;
+  min-height: 220px;
+  max-height: 240px;
+  object-position: center 38%;
+}
+
+.school-detail-thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.gallery-thumb {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  opacity: 0.82;
+}
+
+.gallery-thumb:hover,
+.gallery-thumb:focus-visible {
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+.gallery-thumb:focus-visible {
+  outline: 2px solid rgba(47, 164, 255, 0.55);
+  outline-offset: 3px;
+}
+
+.gallery-thumb.is-active {
+  opacity: 1;
+  box-shadow: 0 0 0 3px rgba(47, 164, 255, 0.22);
+}
+
+.gallery-thumb img {
+  width: 100%;
   aspect-ratio: 4 / 3;
-  min-height: 180px;
+  min-height: 64px;
+  max-height: 72px;
+  border-radius: 16px;
+  object-fit: cover;
 }
 
 .school-photo-wall img {
@@ -1353,7 +1399,7 @@ p {
   }
 
   .school-detail-gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .trust-bar {
@@ -1452,6 +1498,10 @@ p {
 
   .school-detail-gallery {
     grid-template-columns: 1fr;
+  }
+
+  .school-detail-thumbs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .mini-strip {

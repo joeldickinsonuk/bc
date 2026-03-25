@@ -55,3 +55,33 @@ if (revealItems.length) {
 
   revealItems.forEach((item) => io.observe(item));
 }
+
+const galleries = document.querySelectorAll('[data-gallery]');
+
+galleries.forEach((gallery) => {
+  const mainImage = gallery.querySelector('[data-gallery-main]');
+  const thumbs = gallery.querySelectorAll('[data-gallery-thumb]');
+
+  if (!mainImage || !thumbs.length) {
+    return;
+  }
+
+  thumbs.forEach((thumb) => {
+    thumb.addEventListener('click', () => {
+      const nextSrc = thumb.dataset.src;
+      const nextAlt = thumb.dataset.alt;
+
+      if (!nextSrc) {
+        return;
+      }
+
+      mainImage.src = nextSrc;
+      mainImage.alt = nextAlt || mainImage.alt;
+
+      thumbs.forEach((item) => {
+        item.classList.toggle('is-active', item === thumb);
+        item.setAttribute('aria-pressed', String(item === thumb));
+      });
+    });
+  });
+});
