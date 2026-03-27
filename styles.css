@@ -539,6 +539,37 @@ p {
   margin-top: 1rem;
 }
 
+.service-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.service-card-media img {
+  aspect-ratio: 4 / 3;
+}
+
+.service-card-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.service-card-copy p {
+  margin-top: 0.7rem;
+}
+
+.service-card .cta-row {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
 .intro-copy {
   max-width: 860px;
 }
@@ -1299,7 +1330,8 @@ p {
   }
 
   .featured-review-row,
-  .testimonials-grid {
+  .testimonials-grid,
+  .service-card-grid {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -1385,6 +1417,7 @@ p {
   .split,
   .feature-grid,
   .featured-review-row,
+  .service-card-grid,
   .testimonials-grid,
   .video-shell,
   .school-hero,
