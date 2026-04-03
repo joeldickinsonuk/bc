@@ -835,6 +835,10 @@ p {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.photo-gallery-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .photo-gallery-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -849,6 +853,11 @@ p {
 
 .photo-gallery img {
   border-radius: var(--media-radius-sm);
+}
+
+.home-bookings-gallery {
+  max-width: 920px;
+  margin-inline: auto;
 }
 
 .school-gallery-card {
@@ -1441,6 +1450,7 @@ p {
   }
 
   .photo-gallery-4,
+  .photo-gallery-3,
   .photo-gallery-5,
   .photo-gallery-6 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1538,6 +1548,7 @@ p {
   }
 
   .photo-gallery-2,
+  .photo-gallery-3,
   .photo-gallery-4,
   .photo-gallery-5,
   .photo-gallery-6 {
